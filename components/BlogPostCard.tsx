@@ -28,7 +28,7 @@ export const BlogPostCard: React.FC<BlogPostCardProps> = ({ post, onPostSelect }
       </div>
       <div className="p-6">
         <p className="text-brand-primary font-sans font-bold text-xs uppercase tracking-widest mb-2">{post.category}</p>
-        <h3 className="text-2xl font-serif font-bold text-brand-text-primary group-hover:text-brand-primary transition-colors duration-300 leading-tight">{post.title}</h3>
+        <h3 className="text-2xl font-sans font-bold text-brand-text-primary group-hover:text-brand-primary transition-colors duration-300 leading-tight">{post.title}</h3>
         <div className="flex items-center text-brand-text-secondary mt-3">
           <ClockIcon className="w-4 h-4 mr-2" />
           <span className="text-sm font-sans">{post.cookingTime}</span>

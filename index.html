@@ -8,36 +8,34 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Lato:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;800&display=swap" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
     <style>
       .prose-styling {
-        line-height: 1.7;
-        color: #374151; 
+        line-height: 1.75;
+        color: #334155; 
       }
       .prose-styling h2, .prose-styling h3 {
-        font-family: 'Merriweather', serif;
-        color: #111827; 
+        font-weight: 700;
+        color: #0f172a; 
         margin-top: 2.5rem;
         margin-bottom: 1.5rem;
       }
       .prose-styling h2 {
         font-size: 1.75rem;
-        font-weight: 700;
         padding-bottom: 0.5rem;
-        border-bottom: 1px solid #e5e7eb;
+        border-bottom: 1px solid #e2e8f0;
       }
       .prose-styling h3 {
         font-size: 1.5rem;
-        font-weight: 700;
       }
       .prose-styling blockquote {
-        background-color: #fef3f2;
-        border-left: 4px solid #f97316;
+        background-color: #f0f9ff;
+        border-left: 4px solid #0ea5e9;
         padding: 1rem 1.25rem;
         margin: 2rem 0;
         font-style: italic;
-        color: #374151;
+        color: #0c4a6e;
       }
       .prose-styling ul {
         list-style-type: disc;
@@ -58,22 +56,24 @@
       }
       .prose-styling strong {
         font-weight: 700;
-        color: #111827;
+        color: #0f172a;
       }
        .prose-styling .ingredients-list {
         display: grid;
         grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
         gap: 1rem;
-        background-color: #f9fafb;
+        background-color: #f8fafc;
         padding: 1.5rem;
         border-radius: 0.5rem;
         margin-top: 1.5rem;
         list-style-type: none;
         padding-left: 1.5rem;
+        border: 1px solid #e2e8f0;
       }
        .prose-styling .ingredients-list li {
         margin: 0;
         padding: 0;
+        color: #334155;
       }
     </style>
     <script>
@@ -81,19 +81,17 @@
         theme: {
           extend: {
             fontFamily: {
-              'sans': ['Lato', 'sans-serif'],
-              'serif': ['Merriweather', 'serif'],
-              'script': ['"Dancing Script"', 'cursive'],
+              'sans': ['Inter', 'sans-serif'],
             },
             colors: {
               'brand': {
-                'primary': '#f97316',
-                'primary-hover': '#ea580c',
-                'background': '#f9fafb',
+                'primary': '#0ea5e9', // sky-500
+                'primary-hover': '#0284c7', // sky-600
+                'background': '#ffffff', // white
                 'surface': '#ffffff',
-                'border': '#e5e7eb',
-                'text-primary': '#1f2937',
-                'text-secondary': '#6b7280',
+                'border': '#e2e8f0', // slate-200
+                'text-primary': '#0f172a', // slate-900
+                'text-secondary': '#64748b', // slate-500
               }
             }
           }
