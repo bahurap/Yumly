@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Yummy Blog</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Lato:wght@400;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+    <style>
+      .prose-styling {
+        line-height: 1.7;
+        color: #374151; 
+      }
+      .prose-styling h2, .prose-styling h3 {
+        font-family: 'Merriweather', serif;
+        color: #111827; 
+        margin-top: 2.5rem;
+        margin-bottom: 1.5rem;
+      }
+      .prose-styling h2 {
+        font-size: 1.75rem;
+        font-weight: 700;
+        padding-bottom: 0.5rem;
+        border-bottom: 1px solid #e5e7eb;
+      }
+      .prose-styling h3 {
+        font-size: 1.5rem;
+        font-weight: 700;
+      }
+      .prose-styling blockquote {
+        background-color: #fef3f2;
+        border-left: 4px solid #f97316;
+        padding: 1rem 1.25rem;
+        margin: 2rem 0;
+        font-style: italic;
+        color: #374151;
+      }
+      .prose-styling ul {
+        list-style-type: disc;
+        margin: 1.5rem 0;
+        padding-left: 1.5rem;
+      }
+      .prose-styling ol {
+        list-style-type: decimal;
+        margin: 1.5rem 0;
+        padding-left: 1.5rem;
+      }
+      .prose-styling li {
+        margin: 0.75rem 0;
+        padding-left: 0.5rem;
+      }
+      .prose-styling p {
+        margin: 1.5rem 0;
+      }
+      .prose-styling strong {
+        font-weight: 700;
+        color: #111827;
+      }
+       .prose-styling .ingredients-list {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+        gap: 1rem;
+        background-color: #f9fafb;
+        padding: 1.5rem;
+        border-radius: 0.5rem;
+        margin-top: 1.5rem;
+        list-style-type: none;
+        padding-left: 1.5rem;
+      }
+       .prose-styling .ingredients-list li {
+        margin: 0;
+        padding: 0;
+      }
+    </style>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: {
+              'sans': ['Lato', 'sans-serif'],
+              'serif': ['Merriweather', 'serif'],
+              'script': ['"Dancing Script"', 'cursive'],
+            },
+            colors: {
+              'brand': {
+                'primary': '#f97316',
+                'primary-hover': '#ea580c',
+                'background': '#f9fafb',
+                'surface': '#ffffff',
+                'border': '#e5e7eb',
+                'text-primary': '#1f2937',
+                'text-secondary': '#6b7280',
+              }
+            }
+          }
+        }
+      }
+    </script>
+    <script type="importmap">
+      {
+        "imports": {
+          "react": "https://aistudiocdn.com/react@^19.2.0",
+          "react-dom/": "https://aistudiocdn.com/react-dom@^19.2.0/",
+          "react/": "https://aistudiocdn.com/react@^19.2.0/",
+          "@google/genai": "https://aistudiocdn.com/@google/genai@^1.29.0"
+        }
+      }
+    </script>
+  </head>
+  <body class="bg-brand-background">
+    <div id="root"></div>
+    <script type="module" src="/index.tsx"></script>
+  </body>
+</html>
